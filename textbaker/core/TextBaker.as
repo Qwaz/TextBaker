@@ -69,6 +69,7 @@
 			for each (var item:String in target){
 				_textQueue.push(item);
 			}
+			this.dispatchEvent(new TextBakerEvent(TextBakerEvent.TEXT_PUSHED));
 		}
 		
 		public function next():void {
